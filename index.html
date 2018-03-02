@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>
-    </title>
-    <link rel="stylesheet" href="todos.css">
-  </head>
 
+<head>
+  <meta charset="utf-8">
+  <title>So Much Do!</title>
+  <link rel="stylesheet" type="text/css" href="todos.css">
+</head>
 
-  <body>
-    <div id="todo-list" >
-      <h1>ToDo List</h1>
-    <input id='input' type="text" name="" value="">
-      <ul id='ul'>
-        <li>Sample todo 1</li>
-        <li>saple to do 2</li>
-      </ul>
+<body>
+  <div id="container">
+    <header>
+      <h1>So Much Do!</h1>
+    </header>
+    <input id="user-input" placeholder="What do?" type="text" name="userInput">
+    <ul id="todo-list">
 
-    <button id=add_todo type="button" name="button">Submit Button</button>
+    </ul>
+
+    <div id="undo-block">
+      <div id="undo-text">
+        You just removed <em></em>
+      </div>
+      <button onclick="restoreTask()" id="undo">Undo</button>
     </div>
 
+    <button id="add_todo" type="button" name="button">Du The Dew</button>
+  </div>
+
+  <div id="info">
+    <h5>Double-click tasks to edit - press Enter to save edits</h5>
+  </div>
 
 
-    <script src="scripts.js" type="text/javascript"></script>
+  <script src="scripts.js" type="text/javascript"></script>
+</body>
 
-  </body>
 </html>
